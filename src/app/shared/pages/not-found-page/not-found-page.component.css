@@ -1,0 +1,37 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not-found__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.not-found__title {
+  font-size: 10rem;
+}
+.not-found__subtitle {
+  font-size: 3rem;
+}
+.not-found__text {
+  font-size: 1.2rem;
+}
+.not-found__button {
+  background-color: steelblue;
+  border: none;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  padding: .7rem;
+  border-radius: .4rem;
+}
+.not-found__button:hover{
+  color: white;
+  transition: all .25s ease-in-out;
+  background-color: rgb(46, 88, 122);
+}

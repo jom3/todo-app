@@ -1,0 +1,19 @@
+<main class="users__container">
+  <button (click)="onRegister()" class="register__button">Add task</button>
+  <table class="users__table">
+    <tr class="table__row">
+      <th class="table-head__title">N°</th>
+      <th class="table-head__title">Task Name</th>
+      <th class="table-head__title">See more</th>
+      <th class="table-head__title">Delete</th>
+    </tr>
+    @for (task of tasks; track task.id; let i = $index) {
+    <tr class="table__row">
+        <td class="table-container__text">{{i+1}}</td>
+        <td class="table-container__text">{{task.name | titlecase}}</td>
+        <td class="table-container__text"><img src="./assets/more.png" alt="more" class="button__details" (click)="onSeeMore(task.id)"></td>
+        <td class="table-container__text"><img src="./assets/remove.png" alt="remove" (click)="onRemoveTask(task.id)" class="button__details"></td>
+      </tr>
+    }
+  </table>
+</main>

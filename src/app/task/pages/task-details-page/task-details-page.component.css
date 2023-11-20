@@ -1,0 +1,65 @@
+.task-page__container {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.task__upper__container{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.register__button{
+  padding: .5rem;
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: steelblue;
+  border: none;
+  border-radius: .3rem;
+}
+.task__container{
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+}
+.task__name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.divider {
+  border: .1rem solid red;
+  width: 100%;
+}
+.task__table {
+  padding: 1rem;
+  border-spacing: 1rem;
+}
+.task__head {
+  padding: 1rem;
+  border-bottom: 1px solid rgb(255, 133, 133);
+}
+.task__body {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgb(167, 167, 167);
+}
+.desc__container{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.button__details{
+  cursor: pointer;
+}

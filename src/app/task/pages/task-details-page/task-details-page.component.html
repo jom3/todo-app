@@ -1,0 +1,43 @@
+<div class="task-page__container">
+  <div class="task__container">
+    <div class="task__upper__container">
+      <h3 class="task__name">{{ task().name }}</h3>
+      <button (click)="onRegister()" class="register__button">Add sub task</button>
+    </div>
+    <hr class="divider" />
+    <table class="task__table">
+      <tr class="task__header">
+        <th class="task__head">Sub task name</th>
+        <th class="task__head">User</th>
+      <th class="task__head">Status</th>
+        <th class="task__head">Complete</th>
+        <th class="task__head">Delete</th>
+      </tr>
+      @for (stsk of task().subtasks; track stsk.id) {
+        <tr>
+          <td class="task__body">{{ stsk.name }}</td>
+          <td class="task__body">{{ stsk.user }}</td>
+        <td class="task__body"><img [src]="stsk.status!=1?'./assets/accept.png':'./assets/wait.png'" alt=""></td>
+        <td class="task__body">
+          @if (stsk.status!=1) {
+            <img src="./assets/loading.png" alt="loading">
+          }@else {
+            <img src="./assets/check.png" alt="check" (click)="onCompleteSubtask(stsk.id)" class="button__details">
+          }
+        </td>
+        <td class="task__body">
+          @if (stsk.status!=1) {
+            <img src="./assets/loading.png" alt="loading">
+          }@else {
+            <img src="./assets/remove.png" alt="remove" (click)="onRemoveSubtask(stsk.id)" class="button__details">
+          }
+        </td>
+      </tr>
+    }
+  </table>
+  <hr class="divider" />
+  <div class="desc__container">
+    <h5 class="task__desc">Total de subtareas - {{ task().subtasks!.length }}</h5>
+  </div>
+</div>
+</div>

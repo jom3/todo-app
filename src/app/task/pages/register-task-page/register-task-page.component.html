@@ -1,0 +1,15 @@
+<div class="register__task__container">
+  <form [formGroup]="taskForm" (ngSubmit)="onRegisterNewTask()" class="register__form">
+    <h1>Register New Task</h1>
+    <input type="text" class="register__input" [ngClass]="{'register__input__invalid': name?.invalid && (name?.dirty || name?.touched)}" formControlName="name" placeholder="user name">
+    @switch (name?.invalid && (name?.dirty || name?.touched) ) {
+      @case (name?.errors?.['required']) {
+        <p class="error__control">Username required</p>
+      }
+    }
+    <div class="buttons__container">
+      <button class="register__button">Register</button>
+      <button class="return__button" (click)="onBack()">Return</button>
+    </div>
+  </form>
+</div>

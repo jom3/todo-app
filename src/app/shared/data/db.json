@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "id": "6bb439bc-e88e-42e2-adbb-f4478e99e787",
+      "name": "user name 1",
+      "status": true
+    },
+    {
+      "id": "15e6c7c7-6528-45e7-8322-10684594656a",
+      "name": "user name 2",
+      "status": true
+    },
+    {
+      "id": "1f8dbcb5-fbe6-4614-9642-f1d07378d3fb",
+      "name": "user name 3",
+      "status": true
+    }
+  ],
+  "tasks": [
+    {
+      "id": "8247692d-ea6a-4dd2-8b7d-68462a97e9a2",
+      "name": "task 1",
+      "status": true
+    },
+    {
+      "id": "b8d8b39d-0979-4c12-b4cb-a5636157614a",
+      "name": "task 2",
+      "status": true
+    },
+    {
+      "id": "6a9e4562-b804-4738-a0e9-b25845950d57",
+      "name": "task 3",
+      "status": true
+    }
+  ],
+  "subtasks": [
+    {
+      "id": "822fed71-a5d1-4426-b16c-5830d77077b6",
+      "name": "subtask 1",
+      "user": "user name 1",
+      "taskId": "8247692d-ea6a-4dd2-8b7d-68462a97e9a2",
+      "status": true
+    },
+    {
+      "id": "3badd709-acc8-4033-b2ad-2bfacad2dd21",
+      "name": "subtask 2",
+      "user": "user name 2",
+      "taskId": "8247692d-ea6a-4dd2-8b7d-68462a97e9a2",
+      "status": true
+    },
+    {
+      "id": "9d1c27f8-80a6-4193-8f7c-1be6cab2ad42",
+      "name": "subtask 3",
+      "user": "user name 3",
+      "taskId": "8247692d-ea6a-4dd2-8b7d-68462a97e9a2",
+      "status": true
+    }
+  ]
+}

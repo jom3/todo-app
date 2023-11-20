@@ -1,0 +1,17 @@
+<main class="users__container">
+  <button (click)="onRegister()" class="register__button">Add user</button>
+  <table class="users__table">
+    <tr class="table__row">
+      <th class="table-head__title">Full Name</th>
+      <th class="table-head__title">Status</th>
+      <th class="table-head__title">Options</th>
+    </tr>
+    @for (user of users(); track user.id) {
+    <tr class="table__row">
+        <td class="table-container__text">{{user.name | titlecase}}</td>
+        <td class="table-container__text"><img [src]="user.status!=false?'./assets/accept.png':'./assets/decline.png'" alt=""></td>
+        <td class="table-container__text"><img src="./assets/remove.png" alt="remove" (click)="onRemoveUser(user.id)" class="remove__button"></td>
+      </tr>
+    }
+  </table>
+</main>

@@ -1,0 +1,66 @@
+.register__user__container {
+  width: 100%;
+  height: 100%;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.register__form {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(187, 187, 187);
+  border-radius: .5rem;
+  gap: 1rem;
+}
+.register__input {
+  width: 300px;
+  height: 40px;
+  outline: none;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.buttons__container{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register__button {
+  font-size: 1.2rem;
+  padding: .5rem;
+  background-color: steelblue;
+  color: white;
+  border: 1px solid rgba(0, 0, 255, 0.411);
+  border-radius: 1rem;
+}
+.register__button:hover{
+  background-color: rgb(38, 90, 133);
+  transition: all .3s ease-in-out;
+}
+
+.return__button {
+  font-size: 1.2rem;
+  padding: .5rem;
+  background-color: crimson;
+  color: white;
+  border: 1px solid rgba(0, 0, 255, 0.411);
+  border-radius: 1rem;
+}
+.return__button:hover{
+  background-color: rgb(143, 9, 36);
+  transition: all .3s ease-in-out;
+}
+.register__input__invalid{
+  border: 1px solid red;
+}
+.error__control{
+  color: red;
+}

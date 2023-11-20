@@ -1,0 +1,14 @@
+<nav class="navbar__container">
+  <div class="navbar__head">
+    <img ngSrc="./assets/icon_angular.png" priority [width]="64" [height]="64"  alt="icon_angular" class="navbar__icon" >
+    <h1 class="text__app__title">TODO APP</h1>
+  </div>
+
+  <ul class="navbar__list">
+    @for (route of routes(); track route.name) {
+      <li><a [routerLink]="[route.route]" routerLinkActive="router-link-active" class="navbar__item">{{route.name}}</a></li>
+    }@empty {
+      <span>There's no routes</span>
+    }
+  </ul>
+</nav>

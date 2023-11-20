@@ -1,0 +1,7 @@
+<div class="task-page__container">
+  @defer (on viewport()) {
+    <app-task-table [tasks]="tasks()" (removeTask)="onRemoveTask($event)"/>
+  }@placeholder {
+    <h1>algo</h1>
+  }
+</div>

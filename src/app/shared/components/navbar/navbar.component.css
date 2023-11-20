@@ -1,0 +1,40 @@
+.navbar__container {
+  width: 100%;
+  padding: 0 3rem;
+  height: 4rem;
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text__app__title{
+  user-select: none;
+}
+.navbar__head{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.navbar__icon {
+  width: 1;
+  height: 100%;
+}
+.navbar__list {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style: none;
+}
+.navbar__item {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.navbar__item:hover{
+  transition: all 180ms ease-in;
+  color: white;
+  border-bottom: 1px solid white;
+}
